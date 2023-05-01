@@ -18,8 +18,6 @@ const TweetCardsItem = ({ user: {id, user, tweets, followers, avatar, follow}}) 
             <WrapperAvatar>
                 <AvatarImage src={avatar} alt={`Avatar of ${user}`}/>
             </WrapperAvatar>
-            
-            {/* <User>{user}</User> */}
             <Tweet>{`${tweets.toLocaleString("en-US")} tweets`}</Tweet>
             <Follower>{`${(followers + 100000).toLocaleString("en-US")} followers`}</Follower>
             <Button follow={follow} onClick={handleFollow}>{follow ? "Following" : "Follow"}</Button>
