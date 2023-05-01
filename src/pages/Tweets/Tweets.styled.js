@@ -19,3 +19,14 @@ export const LoadMore = styled.button`
     background-color: #5cd3a8;
   }
 `;
+
+export const Nav = styled.div`
+display: flex;
+justify-content: space-between;
+@media (max-width: 780px) {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+`;

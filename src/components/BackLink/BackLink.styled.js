@@ -5,7 +5,7 @@ export const LinkBack = styled(Link)`
   display: inline-flex;
   align-items: center;
   margin-bottom: 15px;
-  margin-left: 20px;
+  margin-left: 39px;
   border-radius: 10px;
   padding: 14px 28px;
   gap: 4px;
@@ -18,4 +18,7 @@ export const LinkBack = styled(Link)`
   &:hover {
     background-color: #5cd3a8;
   }
+  @media (max-width: 780px) {
+    margin-left: 0;
+    }
 `;

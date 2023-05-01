@@ -3,7 +3,7 @@ import { Wrapper, Title } from "./Home.styled";
 const Home = () => {
     return (
         <Wrapper>
-            <Title>Home</Title>
+            <Title>Welcome to the home page! To choose your followers, follow the Tweets link</Title>
         </Wrapper>
     )
 }

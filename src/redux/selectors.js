@@ -7,8 +7,10 @@ export const selectIsLoading = (state) => state.users.isLoading;
 
 export const selectError = (state) => state.users.error;
 
+export const selectStatusFilter = (state) => state.filter.status;
+
 export const selectUserFilter = createSelector(
-    [selectUser], 
+    [selectUser, selectStatusFilter], 
     (users, statusFilter) => {
         switch (statusFilter) {
             case statusFilters.follow:

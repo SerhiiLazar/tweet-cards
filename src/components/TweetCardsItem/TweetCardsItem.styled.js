@@ -65,6 +65,7 @@ export const Tweet = styled.p`
   line-height: 24px;
   text-transform: uppercase;
   color: #ebd8ff;
+  margin: 0;
   margin-bottom: 16px;
 `;
 
@@ -83,6 +84,7 @@ export const Follower = styled.p`
   line-height: 24px;
   text-transform: uppercase;
   color: #ebd8ff;
+  margin: 0;
   margin-bottom: 26px;
 `;
 
