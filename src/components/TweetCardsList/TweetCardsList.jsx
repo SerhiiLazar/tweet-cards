@@ -4,7 +4,6 @@ const TweetCardsList = ({users}) => {
     return (
         <>
             <UserList>
-            {console.log("list", users)}
             {users.map((user) => (
                 <UserCard key={user.id}>
                     <TweetCardsItem user={user} />

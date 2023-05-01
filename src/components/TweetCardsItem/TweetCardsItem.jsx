@@ -9,7 +9,6 @@ const TweetCardsItem = ({ user: {id, user, tweets, followers, avatar, follow}}) 
 
     const handleFollow = () => {
         dispatch(fetchFollow(id));
-        console.log(dispatch)
     }
     return (
         <>  

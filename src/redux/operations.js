@@ -8,7 +8,6 @@ export const fetchUsers = createAsyncThunk(
     async (_, thunkAPI) => {
         try {
             const response = await axios.get('/users');
-            console.log("fetch", response.data);
             return response.data;
         } catch(error) {
             return thunkAPI.rejectWithValue(error.message);
@@ -24,7 +23,6 @@ export const fetchFollow = createAsyncThunk(
             user.follow = !user.follow;
             user.followers = user.follow ? user.followers + 1 : user.followers - 1;
             const response = await axios.put(`/users/${userId}`, user);
-            console.log("fetchFollow", response.data)
             return response.data;
         } catch(error) {
             return thunkAPI.rejectWithValue(error.message);
